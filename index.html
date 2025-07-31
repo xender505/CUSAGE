@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SAGE</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Poppins&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="anime.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- Loading Animation -->
+  <div id="loading-screen" class="loading-screen">
+    <div class="leaf-container">
+      <svg class="leaf" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke="#3a6b35" stroke-width="2">
+        <path d="M32 2 C20 10, 10 30, 32 62 C54 30, 44 10, 32 2 Z" />
+        <line x1="32" y1="2" x2="32" y2="62" stroke="#2e5a29" stroke-width="1" />
+      </svg>
+      <div class="sprout-grow"></div>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div id="main-content" class="hidden">
+    <header class="site-header">
+      <div id="top-bar-leaf-container" class="leaf-container" style="position: relative; height: 40px;">
+        <!-- Leaves will be created here -->
+      </div>
+      <nav>
+        <a href="index.html" class="active">Home</a> |
+        <a href="what-we-do.html">What We Do</a> |
+        <a href="founder.html">Founder</a> |
+        <a href="big-media.html">Big Media</a>
+      </nav>
+    </header>
+    <!-- Landing Page -->
+<section id="landing" class="landing-section">
+      <canvas id="hero-leaf-canvas" class="hero-leaf-canvas"></canvas>
+      <div id="hero-leaf-container" class="hero-leaf-container"></div>
+      <div class="hero-background">
+        <div class="floating-leaves">
+          <!-- Floating leaves animation elements -->
+          <span class="leaf-float" style="--i:1;"></span>
+          <span class="leaf-float" style="--i:2;"></span>
+          <span class="leaf-float" style="--i:3;"></span>
+          <span class="leaf-float" style="--i:4;"></span>
+          <span class="leaf-float" style="--i:5;"></span>
+        </div>
+      </div>
+      <div class="hero-content">
+        <h1>SAGE – Sustainable Action for Green Education</h1>
+        <p class="slogan">Rooted in Action. Growing a Sustainable Future.</p>
+        <div class="hero-buttons">
+          <a href="#events" class="btn btn-secondary">Upcoming Events</a>
+          <a href="#gallery" class="btn btn-secondary">Gallery</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us -->
+    <section id="about" class="section fade-in">
+      <h2>About Us</h2>
+      <p><strong>Vision:</strong> To foster a sustainable future through education and community action.</p>
+      <p><strong>Mission:</strong> Promote environmental awareness, sustainability, and community initiatives.</p>
+      <p><strong>Core Areas:</strong> Climate resilience, mental health, drug abuse prevention, job shadowing.</p>
+      <p><strong>Background:</strong> SAGE is a university club dedicated to sustainable action and green education.</p>
+      <blockquote>
+        "Together, we can grow a greener tomorrow." – Club Patron
+      </blockquote>
+    </section>
+
+    <!-- Our Team -->
+    <section id="team" class="section fade-in">
+      <h2>Our Team</h2>
+      <div class="team-grid">
+        <!-- Team members will be dynamically inserted here -->
+      </div>
+    </section>
+
+    <!-- Events & Programs -->
+    <section id="events" class="section fade-in">
+      <h2>Events & Programs</h2>
+      <div class="event-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="training">Training</button>
+        <button class="filter-btn" data-filter="campaign">Campaign</button>
+        <button class="filter-btn" data-filter="community">Community Engagement</button>
+      </div>
+      <div class="events-container">
+        <!-- Event cards will be dynamically inserted here -->
+      </div>
+    </section>
+
+    <!-- Updates & Gallery -->
+<section id="gallery" class="section fade-in full-width-section">
+      <div class="gallery-content-wrapper">
+        <h2>Updates & Gallery</h2>
+        <div class="slider-container">
+          <button class="slider-btn prev-btn">&#10094;</button>
+          <div class="slider-wrapper">
+            <!-- Slides will be dynamically inserted here -->
+          </div>
+          <button class="slider-btn next-btn">&#10095;</button>
+        </div>
+        <div id="modal" class="modal hidden">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="modal-img" />
+          <div id="caption"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <p>Contact us: sageclub@example.com | Instagram: <a href="https://instagram.com/sageclub" target="_blank" rel="noopener">@sageclub</a> | WhatsApp: <a href="https://chat.whatsapp.com/example" target="_blank" rel="noopener">Join Group</a></p>
+        <p>&copy; 2025 SAGE – Sustainable Action for Green Education</p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
